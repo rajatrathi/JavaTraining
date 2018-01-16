@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://trng.imcs.xsd/paymentMethod" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://trng.imcs.xsd/paymentMethod">
+
+    <complexType name="PaymentMethod">
+    	<sequence>
+    		<element name="cardNumber" type="int"></element>
+    		<element name="cardName" type="string"></element>
+    		<element name="dateFrom" type="date"></element>
+    		<element name="dateType" type="date"></element>
+    		<element name="cardType">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="CREDITCARD"></enumeration>
+    					<enumeration value="DEBITCARD"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <element name="PaymentMethod" type="tns:PaymentMethod"></element>
+</schema>

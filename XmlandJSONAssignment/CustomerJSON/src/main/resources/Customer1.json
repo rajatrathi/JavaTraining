@@ -1,0 +1,23 @@
+{
+  "customerId" : 101,
+  "name" : "Raju",
+  "dataOfBirth" : "2018-01-16T21:39:26.375+0000",
+  "annualSalary" : 1500.0,
+  "address" : {
+    "StreetName" : "2567 E Vermont Street",
+    "ZipCode" : "90817"
+  },
+  "paymentMethod" : [ {
+    "cardNumber" : 1908,
+    "cardName" : "Discover",
+    "dateFrom" : "2018-01-16T21:39:26.377+0000",
+    "dateType" : "2018-01-16T21:39:26.377+0000",
+    "cardType" : "CREDITCARD"
+  }, {
+    "cardNumber" : 2608,
+    "cardName" : "Visa",
+    "dateFrom" : "2018-01-16T21:39:26.377+0000",
+    "dateType" : "2018-01-16T21:39:26.377+0000",
+    "cardType" : "DEBITCARD"
+  } ]
+}

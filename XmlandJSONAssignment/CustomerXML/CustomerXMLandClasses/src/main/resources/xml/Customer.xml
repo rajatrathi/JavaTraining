@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Customer xmlns:tns="http://trng.imcs.xsd/customer" xmlns:tns1="http://trng.imcs.xsd/address" xmlns:tns2="http://trng.imcs.xsd/paymentMethod" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://trng.imcs.xsd/customer ../xsd/Customer.xsd ">
+  <tns:customerId>0</tns:customerId>
+  <tns:name>tns:name</tns:name>
+  <tns:dataOfBirth>2001-01-01</tns:dataOfBirth>
+  <tns:annualSalary>0.0</tns:annualSalary>
+  <tns:address>
+    <tns1:StreetName>tns1:StreetName</tns1:StreetName>
+    <tns1:ZipCode>0</tns1:ZipCode>
+  </tns:address>
+  <tns:paymentMethod>
+    <tns2:cardNumber>0</tns2:cardNumber>
+    <tns2:cardName>tns2:cardName</tns2:cardName>
+    <tns2:dateFrom>2001-01-01</tns2:dateFrom>
+    <tns2:dateType>2001-01-01</tns2:dateType>
+    <tns2:cardType>CREDITCARD</tns2:cardType>
+  </tns:paymentMethod>
+</tns:Customer>

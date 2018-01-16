@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://trng.imcs.xsd/customer"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://trng.imcs.xsd/customer"
+	xmlns:pref="http://trng.imcs.xsd/address"
+	xmlns:pref1="http://trng.imcs.xsd/paymentMethod">
+	<import schemaLocation="Address.xsd"
+		namespace="http://trng.imcs.xsd/address">
+	</import>
+	<import schemaLocation="PaymentMethod.xsd" namespace="http://trng.imcs.xsd/paymentMethod"></import>
+	<complexType name="Customer">
+		<sequence>
+			<element name="customerId" type="int"></element>
+			<element name="name" type="string"></element>
+			<element name="dataOfBirth" type="date"></element>
+			<element name="annualSalary" type="float"></element>
+		<element name="address" minOccurs="1"
+							maxOccurs="2" type="pref:Address"/>
+     	<element name="paymentMethod" minOccurs="1"
+							maxOccurs="2" type="pref1:PaymentMethod"/>
+			</sequence>
+	</complexType>
+	<element name="Customer" type="tns:Customer"></element>
+
+</schema>
