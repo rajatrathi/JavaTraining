@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.imcs/Flight"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.imcs/Flight" xmlns:pref="http://www.imcs/FlightDetails/FlightDetails" xmlns:pref1="http://www.imcs/FlightDetails">
+
+	<import schemaLocation="FlightDetails.xsd" namespace="http://www.imcs/FlightDetails"></import>
+	<complexType name="Flight">
+		<sequence>
+			<element name="flight_id" type="int"></element>
+			<element name="airline_id" type="int"></element>
+			<element name="airline_name" type="string"></element>
+			<element name="from_location" type="string"></element>
+			<element name="to_location" type="string"></element>
+			<element name="departure_time" type="dateTime"></element>
+			<element name="arrival_time" type="dateTime"></element>
+			<element name="duration" type="int"></element>
+			<element name="total_seats" type="int"></element>
+
+
+			<element name="FlightDetails" type="pref:FlightDetails"></element>
+		</sequence>
+	</complexType>
+
+	<element name="Flight" type="tns:Flight"></element>
+</schema>

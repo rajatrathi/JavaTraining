@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Flight xmlns:tns="http://www.imcs/Flight" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imcs/Flight ../xsd/Flight.xsd ">
+  <tns:flight_id>0</tns:flight_id>
+  <tns:airline_id>0</tns:airline_id>
+  <tns:airline_name>tns:airline_name</tns:airline_name>
+  <tns:from_location>tns:from_location</tns:from_location>
+  <tns:to_location>tns:to_location</tns:to_location>
+  <tns:departure_time>2001-12-31T12:00:00</tns:departure_time>
+  <tns:arrival_time>2001-12-31T12:00:00</tns:arrival_time>
+  <tns:duration>0</tns:duration>
+  <tns:total_seats>0</tns:total_seats>
+  <tns:FlightDetails>tns:FlightDetails</tns:FlightDetails>
+</tns:Flight>

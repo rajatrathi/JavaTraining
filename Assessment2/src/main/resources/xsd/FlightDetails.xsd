@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.imcs/FlightDetails" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.imcs/FlightDetails">
+
+    <complexType name="FlightDetails">
+    	<sequence>
+    		<element name="flightID" type="int"></element>
+    		<element name="flight_departure_date" type="date"></element>
+    		<element name="price" type="int"></element>
+    		<element name="available_seats" type="int"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="FlightDetails" type="tns:FlightDetails"></element>
+</schema>
